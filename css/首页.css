@@ -1,0 +1,339 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+a {
+	display: inline-block;
+}
+body .w {
+	width: 1386px;
+	margin: 0 auto;
+}
+body {
+	background: black;
+}
+/* 小猫 */
+.top {
+    	position: absolute;
+    	height: 100px;
+    	width: 100%;
+    	top: 600px;
+    	left: 2000px;
+    }
+    .top li {
+    	float: left;
+    }
+    .top img{
+    	width: 140px;
+    	height: 100px;
+    	border-radius: 600px;
+    	box-shadow: 20px 20px 200px orange;
+    }
+/* 音频插入 */
+embed {
+	width: 80px;
+	height: 40px;
+	position: absolute;
+	left: -9px;
+}
+.right .audio {
+	width: 68px;
+	height: 25px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 15px;
+	margin-top: 25px;
+	background: pink;
+}
+/* 固定表头 */
+.header {
+	margin: 0 auto;
+	width: 1386px;
+	height: 80px;
+	position: fixed;
+	z-index: 4;
+}
+.left {
+	float: left;
+}
+.left .l {
+	margin-left: 307px;
+}
+.logo {
+	position: absolute;
+	top: 600px;
+	background: gray;
+	/* opacity: .3; */
+	height: 60px;
+}
+.left li,.right li {
+	float: left;
+	margin: 15px 20px;
+	line-height: 40px;
+	color: white;
+}
+.left .logo {
+	margin: 5px 71px;
+
+}
+a {
+	display: inline-block;
+	color: white;
+}
+a:hover {
+	color: orange;
+}
+.right {
+	float: right;
+}
+ul {
+	margin: 5px 30px 0 0;
+}
+/* 置顶按钮 */
+.ding {
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+	display: none;
+	background: rgba(0, 0, 0, .5);
+	width: 60px;
+	text-align: center;
+	z-index: 10;
+}
+.in {
+	position: fixed;
+	bottom: 48px;
+	right: 110px;
+	display: none;
+	z-index: 10;
+}
+.in img {
+	width: 120px;
+	height: 120px;
+}
+.in p {
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: orange;
+}
+.ding img {
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+}
+.ding li,.ding div {
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+}
+/* 设置banner轮播 */
+.hp {
+	position: relative;
+}
+.h {
+	height: 750px;
+	width: 100%;
+	display: block;
+}
+.welcome {
+	position: absolute;
+	top: 150px;
+	left: 80px;
+	width: 1300px;
+	height: 800px;
+	opacity: 0.5;
+	border-radius: 2000px;
+	box-shadow: 20px 20px 200px lightblue;
+	display: none;
+}
+.bt {
+	position: absolute;
+	top: 60px;
+	left: 500px;
+	color: lightblue;
+	font-family: '仿宋';
+	background: url("../image/s6.jpg");
+/* 	background-image: linear-gradient(
+                  to right,
+                  #ab2927,
+                  black); */
+	border-radius: 45px;
+	padding: 20px;
+	display: none;
+}
+.bt2 {
+	position: absolute;
+	top: 300px;
+	left: 2000px;
+	color: #ab2927;
+	text-shadow: 5px 20px 50px #ab2927;
+	transform: rotateY(360deg);
+	transform-origin: center center;
+	animation: father  2s  3 linear;
+}
+ @keyframes  father {
+          	from {
+          		transform:  rotateZ(0deg);
+          	}
+          	to {
+          		transform:  rotateZ(-360deg);
+          	}
+          }
+.bt3 {
+	position: absolute;
+	top: 300px;
+	left: -200px;
+	color: lightblue;
+	text-shadow: 5px 20px 50px #ab2927;
+	transform-origin: center center;
+	animation:  son 4s  infinite linear;
+	background: url('../image/s6.jpg');
+	border-radius: 50px;
+}
+ @keyframes  son {
+          	from {
+          		transform: rotateY(0deg) scale(1.2);
+          	}
+          	to {
+          		transform: rotateY(-360deg) scale(1.2);
+          	}
+          }
+.ico{
+	position: absolute;
+	top: 200px;
+	left: 740px;
+	width: 50px;
+	height: 50px;
+}
+.man {
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	top: 625px;
+	left: 550px;
+}
+.banner .img img {
+	margin-top: 575px;
+	margin-left: 235px;
+	width: 1000px;
+	height: 600px;
+	display: block;
+}
+.banner .img li {
+	display: none;
+}
+.banner .img .show {
+	display: block;
+}
+.banner {
+	/* width: 100%; */
+  padding-top: 20px;
+	position: relative;
+	z-index: 3;
+	background-image: url(../image/back2.jpg);
+	background-size: 1600px;
+}
+.banner .kejishow {
+	margin: 0 auto ;
+	width: 1200px;
+}
+.banner .kejishow img {
+	margin: 115px auto ;
+	width: 1200px;
+	/* height: 800px; */
+}
+/* 小轮播 */
+.four {
+	height: 200px;
+	position: absolute;
+	top: 400px;
+	left: 100px;
+}
+.four img {
+	width: 280px;
+	height: 150px;
+}
+.four li {
+	float: left;
+	margin-left: 20px;
+	 width: 280px;
+	 height: 150px;
+	 background: rgba(0, 0, 0, 0.5);
+	 text-align: center;
+	 line-height: 150px;
+	 position: relative;
+}
+.four button {
+	display: none;
+}
+.four button {
+	background: rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 60px;
+	left: 110px;
+	color: white;
+	border: solid orange;
+	border-radius: 15px;
+}
+/* 底部 */
+footer .ww {
+    text-align: center;
+    padding-top: 30px;
+    background: #232323;
+}
+.footer_tit {
+	height: 200px;
+	font-family: '仿宋';
+}
+.footer_tit span {
+    font-size: 26px;
+    color: orange;
+}
+.footer_tit p {
+    font-size: 31px;
+    color: red;
+    display: inline-block;
+    background-image:radial-gradient(100px 100px at center center,
+    	black,
+    	#232323);
+    margin-top: 20px;
+}
+.t_icon img {
+     width: 40px;
+     height: 40px;
+     display: inline-block;
+     position: absolute;
+     top: 0;
+}
+.t_icon li {
+	float: left;
+	margin-right: 20px;
+}
+.t_icon li a {
+	line-height: 40px;
+	margin-left: 50px;
+} 
+.t_icon {
+	margin-top: 50px;
+	margin-left: 500px;
+	position: relative;
+}
+.t_icon li {
+	display: none;
+}
+.ft_di {
+    height: 98px;
+    text-align: center;
+    background: #1c1c1c;
+}
+.ff {
+	padding-top: 10px;
+}
+.ff a,em {
+    color: white;
+}
+.ff a:hover {
+	color: orange;
+}
